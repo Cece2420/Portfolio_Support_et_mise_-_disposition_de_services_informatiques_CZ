@@ -3,122 +3,510 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Céline</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio - BTS SIO</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="blob one"></div>
-  <div class="blob two"></div>
-  <div class="blob three"></div>
+  <div class="background-shape shape-1"></div>
+  <div class="background-shape shape-2"></div>
+  <div class="background-shape shape-3"></div>
 
-  <header class="navbar">
-    <div class="logo">C.ZHANG</div>
-
-    <nav class="nav-links">
-      <a class="active" href="#accueil">Accueil</a>
-      <a href="#apropos">À propos</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#parcours">Parcours</a>
-      <a href="#projets">Projets</a>
-      <a href="#veille">Veille</a>
-      <a href="#e5">E5</a>
-      <a href="#e6">E6</a>
-      <a href="#contact">Contact</a>
-      <a class="linkedin-top" href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-      <span class="moon">●</span>
+  <header class="top-bar">
+    <nav class="folder-nav">
+      <a class="tab active" href="#accueil">Accueil</a>
+      <a class="tab" href="#apropos">À propos</a>
+      <a class="tab" href="#parcours">Parcours</a>
+      <a class="tab" href="#missions">Missions</a>
+      <a class="tab" href="#projets">Projets</a>
+      <a class="tab" href="#competences">Compétences</a>
+      <a class="tab" href="#tableau">Tableau</a>
+      <a class="tab" href="#contact">Contact</a>
+      <a class="tab linkedin" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
     </nav>
   </header>
 
-  <main id="accueil" class="hero">
-    <div class="hero-content">
-      <h1>Céline ZHANG</h1>
-      <p class="subtitle">Étudiante en BTS SIO - Option SISR</p>
-      <p class="welcome">Bienvenue sur mon Portfolio</p>
+  <main id="accueil" class="hero folder-page">
+    <div class="folder-label">Portfolio BTS SIO</div>
 
-      <div class="buttons">
-        <a class="btn soft" href="#apropos">Découvrir mon profil</a>
-        <a class="btn" href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-        <a class="btn" href="#contact">Me contacter</a>
-        <a class="btn primary" href="LIEN_CANVA_E5" target="_blank">Accès E5</a>
-        <a class="btn primary" href="LIEN_CANVA_E6" target="_blank">Accès E6</a>
+    <div class="hero-content">
+      <p class="eyebrow">E5 • Support et mise à disposition de services informatiques</p>
+      <h1>Portfolio</h1>
+      <p class="hero-text">
+        Bienvenue sur mon espace de présentation. Ce portfolio regroupe mon parcours,
+        mes missions, mes projets, les compétences mobilisées et mon tableau de synthèse BTS SIO.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#missions" class="btn primary">Voir les missions</a>
+        <a href="#projets" class="btn secondary">Voir les projets</a>
+        <a href="#competences" class="btn ghost">Compétences</a>
       </div>
     </div>
 
-    <a class="down" href="#apropos">⌄</a>
+    <aside class="hero-card">
+      <span class="card-tag">Option</span>
+      <h2>SISR</h2>
+      <p>
+        Support utilisateur, services réseau, systèmes, déploiement et mise à disposition de services informatiques.
+      </p>
+    </aside>
+
+    <div class="bottom-title">
+      <span>BTS SIO</span>
+    </div>
   </main>
 
-  <section id="apropos">
-    <h2>À propos</h2>
+  <section id="apropos" class="section folder-section centered-section">
+    <div class="section-title center-title">
+      <span>01</span>
+      <h2>À propos</h2>
+    </div>
+
     <p>
-      Ce portfolio présente mon parcours, mes compétences et mes travaux réalisés dans le cadre de ma formation en BTS SIO.
-      Le contenu principal est disponible sur Canva afin de faciliter la présentation orale et la mise à jour de mes supports.
+      Ce site fonctionne comme un dossier numérique. Chaque onglet permet d’accéder à une partie précise :
+      mon parcours, mes missions, mes projets, les compétences du référentiel et mes informations de contact.
+    </p>
+  </section>
+
+  <section id="parcours" class="section folder-section">
+    <div class="section-title center-title">
+      <span>02</span>
+      <h2>Parcours</h2>
+    </div>
+
+    <div class="timeline clean-timeline">
+      <div class="timeline-item">
+        <span class="dot"></span>
+        <div>
+          <h3>BTS SIO</h3>
+          <p>Formation orientée informatique, réseau, systèmes, support utilisateur et services numériques.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="dot"></span>
+        <div>
+          <h3>Réalisations professionnelles</h3>
+          <p>Travaux réalisés en formation et projets permettant de couvrir les compétences du référentiel BTS SIO.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="dot"></span>
+        <div>
+          <h3>Portfolio en ligne</h3>
+          <p>Création et déploiement d’un portfolio avec GitHub Pages afin de centraliser mes supports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="missions" class="section folder-section">
+    <div class="section-title center-title">
+      <span>03</span>
+      <h2>Missions BTS SIO</h2>
+    </div>
+
+    <p class="section-intro centered-text">
+      Les missions sont organisées autour des grandes familles de compétences du BTS SIO.
     </p>
 
-    <div class="canva-box">
-      <p><strong>Contenu du portfolio :</strong> cliquez sur les boutons E5 ou E6 pour accéder directement aux supports Canva.</p>
+    <div class="mission-grid">
+      <article class="mission-card">
+        <h3>Réalisations en formation</h3>
+        <p>Projets scolaires, travaux pratiques et réalisations professionnelles en cours de formation.</p>
+      </article>
+
+      <article class="mission-card">
+        <h3>Réalisations en entreprise</h3>
+        <p>Travaux liés à un contexte professionnel ou fictif : support, infrastructure, projet, marketing et développement.</p>
+      </article>
+
+      <article class="mission-card">
+        <h3>Infrastructure</h3>
+        <p>Services en ligne, GLPI, site vitrine, GitHub Pages, nom de domaine, serveur web et outils de déploiement.</p>
+      </article>
     </div>
   </section>
 
-  <section id="langages">
-    <h2>Langages de programmation</h2>
-    <div class="canva-box">
-      <p><strong>Langages maîtrisés :</strong></p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-      </ul>
-      <br>
-      <p><strong>Langages en cours d’apprentissage :</strong></p>
-      <ul>
-        <li>SQL</li>
-        <li>Bash</li>
-      </ul>
+  <section id="projets" class="section folder-section projects-section">
+    <div class="section-title center-title">
+      <span>04</span>
+      <h2>Projets réalisés</h2>
+    </div>
+
+    <p class="section-intro centered-text">
+      Chaque projet possède son propre espace. Les compétences mobilisées sont indiquées directement dans chaque dossier.
+    </p>
+
+    <div class="project-stack">
+
+      <article class="project-folder">
+        <div class="project-folder-tab">Projet 01</div>
+        <div class="project-content">
+          <div class="project-main">
+            <h3>Recensement du patrimoine informatique</h3>
+            <p>Identification, inventaire et recensement des ressources numériques dans un contexte informatique.</p>
+          </div>
+
+          <div class="mobilised-skills">
+            <h4>Compétences mobilisées</h4>
+            <ul>
+              <li>C1 - Recenser et identifier les ressources numériques</li>
+              <li>C2 - Exploiter des référentiels, normes et standards</li>
+              <li>C6 - Vérifier le respect des règles d’utilisation des ressources numériques</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-folder">
+        <div class="project-folder-tab">Projet 02</div>
+        <div class="project-content">
+          <div class="project-main">
+            <h3>Collecte et orientation des demandes</h3>
+            <p>Rôle de chef de groupe dans un projet e-commerce : collecte des besoins, répartition des tâches et suivi de l’avancement.</p>
+          </div>
+
+          <div class="mobilised-skills">
+            <h4>Compétences mobilisées</h4>
+            <ul>
+              <li>C7 - Collecter, suivre et orienter des demandes</li>
+              <li>C13 - Analyser les objectifs et les modalités d’organisation d’un projet</li>
+              <li>C14 - Planifier les activités</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-folder">
+        <div class="project-folder-tab">Projet 03</div>
+        <div class="project-content">
+          <div class="project-main">
+            <h3>Planification avec Trello</h3>
+            <p>Création d’un tableau Trello, organisation des tâches, suivi des colonnes et adaptation du planning.</p>
+          </div>
+
+          <div class="mobilised-skills">
+            <h4>Compétences mobilisées</h4>
+            <ul>
+              <li>C13 - Analyser les objectifs et les modalités d’organisation d’un projet</li>
+              <li>C14 - Planifier les activités</li>
+              <li>C15 - Évaluer les indicateurs de suivi d’un projet et analyser les écarts</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-folder">
+        <div class="project-folder-tab">Projet 04</div>
+        <div class="project-content">
+          <div class="project-main">
+            <h3>Mise en place de Google Analytics</h3>
+            <p>Ajout d’un outil de suivi d’audience sur un site vitrine afin de mesurer sa visibilité.</p>
+          </div>
+
+          <div class="mobilised-skills">
+            <h4>Compétences mobilisées</h4>
+            <ul>
+              <li>C10 - Valoriser l’image de l’organisation sur les médias numériques</li>
+              <li>C11 - Référencer les services en ligne et mesurer leur visibilité</li>
+              <li>C12 - Participer à l’évolution d’un site Web exploitant les données</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-folder">
+        <div class="project-folder-tab">Projet 05</div>
+        <div class="project-content">
+          <div class="project-main">
+            <h3>Déploiement avec GitHub Pages</h3>
+            <p>Déploiement d’un service web statique, configuration de GitHub Pages et publication en HTTPS.</p>
+          </div>
+
+          <div class="mobilised-skills">
+            <h4>Compétences mobilisées</h4>
+            <ul>
+              <li>C16 - Réaliser les tests d’intégration et d’acceptation d’un service</li>
+              <li>C17 - Déployer un service</li>
+              <li>C18 - Accompagner les utilisateurs dans la mise en place d’un service</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <p>Cette partie peut renvoyer vers mes certifications ou être complétée plus tard.</p>
+  <section id="competences" class="section folder-section">
+    <div class="section-title center-title">
+      <span>05</span>
+      <h2>Compétences développées</h2>
+    </div>
+
+    <div class="competence-grid">
+      <details open>
+        <summary>1.1. Gérer le patrimoine informatique</summary>
+        <ul>
+          <li>C1 - Recenser et identifier les ressources numériques</li>
+          <li>C2 - Exploiter des référentiels, normes et standards adoptés</li>
+          <li>C3 - Mettre en place et vérifier les niveaux d’habilitation</li>
+          <li>C4 - Vérifier les conditions de la continuité d’un service</li>
+          <li>C5 - Gérer des sauvegardes</li>
+          <li>C6 - Vérifier le respect des règles d’utilisation des ressources numériques</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>1.2. Répondre aux incidents et demandes</summary>
+        <ul>
+          <li>C7 - Collecter, suivre et orienter des demandes</li>
+          <li>C8 - Traiter des demandes concernant les services réseau et système</li>
+          <li>C9 - Traiter des demandes concernant les applications</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>1.3. Développer la présence en ligne</summary>
+        <ul>
+          <li>C10 - Valoriser l’image de l’organisation sur les médias numériques</li>
+          <li>C11 - Référencer les services en ligne et mesurer leur visibilité</li>
+          <li>C12 - Participer à l’évolution d’un site Web</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>1.4. Travailler en mode projet</summary>
+        <ul>
+          <li>C13 - Analyser les objectifs et modalités d’organisation d’un projet</li>
+          <li>C14 - Planifier les activités</li>
+          <li>C15 - Évaluer les indicateurs de suivi et analyser les écarts</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>1.5. Mettre à disposition un service informatique</summary>
+        <ul>
+          <li>C16 - Réaliser les tests d’intégration et d’acceptation</li>
+          <li>C17 - Déployer un service</li>
+          <li>C18 - Accompagner les utilisateurs</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>1.6. Organiser son développement professionnel</summary>
+        <ul>
+          <li>C19 - Mettre en place son environnement d’apprentissage personnel</li>
+          <li>C20 - Mettre en œuvre des outils et stratégies de veille</li>
+          <li>C21 - Gérer son identité professionnelle</li>
+          <li>C22 - Développer son projet professionnel</li>
+        </ul>
+      </details>
+    </div>
   </section>
 
-  <section id="parcours">
-    <h2>Parcours</h2>
-    <p>Présentation rapide de mon parcours scolaire et professionnel.</p>
+  <section id="tableau" class="section folder-section synthese-section">
+    <div class="section-title center-title">
+      <span>06</span>
+      <h2>Tableau de synthèse BTS SIO</h2>
+    </div>
+
+    <div class="synthese-card">
+      <div class="synthese-header">
+        <div>
+          <h3>BTS Services Informatiques aux Organisations</h3>
+          <p>Tableau de synthèse des réalisations professionnelles</p>
+        </div>
+        <div class="session-badge">Session 2026</div>
+      </div>
+
+      <div class="student-info">
+        <div><strong>Nom et prénom :</strong> Zhang Céline</div>
+        <div><strong>N° candidat :</strong> 100673505HK</div>
+        <div><strong>Centre de formation :</strong> Efrei</div>
+        <div><strong>Option :</strong> SISR</div>
+        <div class="full-row"><strong>Adresse URL du portfolio :</strong> <a class="portfolio" href="https://cece2420.github.io/Portfolio_Support_et_mise_-_disposition_de_services_informatiques_CZ/" target="_blank">Portfolio</a></div>
+      </div>
+
+      <div class="table-scroll">
+        <table class="synthese-table">
+          <thead>
+            <tr>
+              <th>Réalisations professionnelles</th>
+              <th>Période</th>
+              <th>Gérer le patrimoine informatique</th>
+              <th>Répondre aux incidents et aux demandes</th>
+              <th>Développer la présence en ligne</th>
+              <th>Travailler en mode projet</th>
+              <th>Mettre à disposition un service informatique</th>
+              <th>Organiser son développement professionnel</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="table-category">
+              <td colspan="8">Réalisation en cours de formation</td>
+            </tr>
+
+            <tr>
+              <td>J’ai installé un agent GLPI sur mon serveur GLPI et j’ai inventorié le serveur.</td>
+              <td>04/11/2025</td>
+              <td class="checked">X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Brainstorming de tout ce qu’il y aura sur le site de notre entreprise.</td>
+              <td>17/09/2025</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="checked">X</td>
+              <td></td>
+              <td class="checked">X</td>
+            </tr>
+
+            <tr>
+              <td>Installation de ngrok sur la VM pour mettre notre application locale sur une URL publique.</td>
+              <td>04/10/2025</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="checked">X</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Installation de FileZilla.</td>
+              <td>06/10/2025</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="checked">X</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Publication du site via GitHub Pages.</td>
+              <td>18/12/2025</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="checked">X</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Déploiement du site via Google Analytics.</td>
+              <td>18/12/2025</td>
+              <td></td>
+              <td></td>
+              <td class="checked">X</td>
+              <td></td>
+              <td class="checked">X</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Créer plusieurs comptes utilisateurs sur GLPI tout en contrôlant leur accès.</td>
+              <td>09/01/2026</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="checked">X</td>
+            </tr>
+
+            <tr>
+              <td>Sécuriser les mots de passe sur GLPI.</td>
+              <td>09/01/2026</td>
+              <td class="checked">X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Faire des tickets sur GLPI en cas de problèmes.</td>
+              <td>09/11/2025</td>
+              <td></td>
+              <td class="checked">X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Création d’un espace de travail commun sur Trello pour y mettre des missions.</td>
+              <td>18/12/2025</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="checked">X</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr class="table-category">
+              <td colspan="8">Réalisations en milieu professionnel en cours de première année</td>
+            </tr>
+
+            <tr class="empty-row">
+              <td colspan="8">À compléter</td>
+            </tr>
+
+            <tr class="table-category">
+              <td colspan="8">Réalisations en milieu professionnel en cours de seconde année</td>
+            </tr>
+
+            <tr class="empty-row">
+              <td colspan="8">À compléter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </section>
 
-  <section id="projets">
-    <h2>Projets</h2>
-    <p>Mes projets sont présentés dans mes supports Canva, accessibles depuis les boutons de la page d’accueil.</p>
-  </section>
+  <section id="contact" class="section folder-section contact-section">
+    <div class="section-title center-title">
+      <span>07</span>
+      <h2>Contact</h2>
+    </div>
 
-  <section id="veille">
-    <h2>Veille technologique</h2>
-    <p>Ma veille technologique est intégrée dans mon support de présentation Canva.</p>
-  </section>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p>cecez</p>
+      </div>
 
-  <section id="e5">
-    <h2>Épreuve E5</h2>
-    <p>Accès au support Canva de l’épreuve E5.</p>
-    <a class="btn primary" href="LIEN_CANVA_E5" target="_blank">Ouvrir le Canva E5</a>
-  </section>
+      <div class="contact-card">
+        <h3>GitHub</h3>
+        <p>https://github.com/Cece2420</p>
+      </div>
 
-  <section id="e6">
-    <h2>Épreuve E6</h2>
-    <p>Accès au support Canva de l’épreuve E6.</p>
-    <a class="btn primary" href="LIEN_CANVA_E6" target="_blank">Ouvrir le Canva E6</a>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <strong>ton.email@example.com</strong></p>
-    <p>GitHub : <strong>https://github.com/Cece2420</strong></p>
+      <div class="contact-card">
+        <h3>LinkedIn</h3>
+        <a href="https://www.linkedin.com/" target="_blank">Voir mon profil</a>
+      </div>
+    </div>
   </section>
 
   <footer>
-    © 2026 - Portfolio BTS SIO | Déployé avec GitHub Pages
+    <p>© 2026 - Portfolio BTS SIO | Déployé avec GitHub Pages</p>
   </footer>
 </body>
 </html>
