@@ -15,7 +15,6 @@
   --beige: #d8d0cb;
   --soft: #f4f1ef;
   --text: #665e5a;
-  --shadow: rgba(60, 56, 54, 0.12);
 }
 
 html {
@@ -357,13 +356,12 @@ main {
   flex-shrink: 0;
 }
 
-/* CARTES GÉNÉRALES */
+/* CARTES */
 
 .context-text,
 .context-card,
 .infra-card,
 .org-item,
-.hackathon-summary > div,
 .realisation-card,
 .contact-card {
   background: white;
@@ -446,24 +444,11 @@ main {
   gap: 22px;
 }
 
-/* HACKATHON */
+/* RÉALISATIONS */
 
 .projects-section {
   width: min(1250px, calc(100% - 40px));
 }
-
-.hackathon-summary {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-
-.hackathon-summary h3 {
-  margin-bottom: 14px;
-  font-size: 24px;
-}
-
-/* RÉALISATIONS */
 
 .realisation-stack {
   display: grid;
@@ -750,9 +735,6 @@ main {
   color: var(--dark);
   text-align: center;
   font-weight: 800;
-  position: sticky;
-  top: 0;
-  z-index: 2;
 }
 
 .synthese-table td:first-child {
@@ -783,7 +765,6 @@ main {
   text-align: center;
   font-size: 16px;
   font-weight: 900;
-  letter-spacing: 0.2px;
 }
 
 .table-category:hover td {
@@ -840,7 +821,6 @@ footer {
 
 @media (max-width: 1050px) {
   .context-layout,
-  .hackathon-summary,
   .competence-grid {
     grid-template-columns: 1fr;
   }
@@ -969,7 +949,6 @@ footer {
   .context-card,
   .infra-card,
   .org-item,
-  .hackathon-summary > div,
   .contact-card {
     padding: 24px;
   }
